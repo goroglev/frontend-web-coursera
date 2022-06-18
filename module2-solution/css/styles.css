@@ -7,27 +7,30 @@
 }
 
 body {
+  /* setting explicit font, -size and -color instead of the user agent default */
   font-family: Helvetica;
   font-size: 18px;
   color: black;
 }
 
+/* styling heading1 element */
 h1 {
-  font-size: 1.75em;
+  font-size: 1.75em; 
   text-align: center;
   margin: 25px 0 30px;
 }
 
 section > div {
+  /* placeholder for the section item (title and description) */
   border: 1px solid black;
   background-color: grey;
   padding: 0 0 7px 7px;
   margin: 10px;
-  position: relative;
+  position: relative; /* we want the paragraph (<p>) child element positioned relative to this element */
 }
 
+/* section title */
 section div p {
-  /* section title */
   border: 1px solid black;
   font-size: 1.25em;
   /* it will be positioned in the top right corner of its first ancestor 
